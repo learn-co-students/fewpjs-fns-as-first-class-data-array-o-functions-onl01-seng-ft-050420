@@ -37,5 +37,5 @@ function unleashDog(dogName, dogBreed) {
 const routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog]
 
 function exerciseDog(dogName, dogBreed) {
-  return routine.map(r => r(dogName, dogBreed)) // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+  return routine.map(routine => routine(dogName, dogBreed)) // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 }
